@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "firebase": "^11.1.0"
+  },
+  "_comment1": "Теперь, когда вы выполните команду npm run deploy",
+  "_comment2": "сначала будет выполнена команда flutter build web --output=public",
+  "_comment3": "и только если она завершится успешно, будет выполнена команда firebase deploy --only hosting.",
+  
+  "scripts": {
+  "build": "flutter build web --output=public",
+  "deploy": "flutter build web --output=public && firebase deploy --only hosting"
+  
+}
+
+}

@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "electricity_counter_master"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "electricity_counter_master-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
